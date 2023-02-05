@@ -15,4 +15,3 @@ for i in range(0,a):
     l.append(ele)
 print(l)
 print(sumsquare(l))
- 
