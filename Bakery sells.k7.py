@@ -1,10 +1,7 @@
-fresh=int(input("enter the number of fresh loaves purchased:")) 
-old=int(input("enter the number of day old loaves purchased:")) 
-regularprice=185 
-fresh1=regularprice*1.0*fresh 
-old1=regularprice*0.4*old 
-totalamount=fresh1+old1 
-print("Regular Price=%.2f"%regularprice) 
-print("Amount of new loaves=%.2f"%fresh1) 
-print("Amount of old loaves=%.2f"%old1) 
-print("Total Amount=%.2f"%totalamount)
+fresh=int(input("enterÂ theÂ numberÂ ofÂ freshÂ loavesÂ purchased:")) 
+old=int(input("enterÂ theÂ numberÂ ofÂ dayÂ oldÂ loavesÂ purchased:")) 
+print("\n")
+print("RegularÂ Price=%.2f"%regularprice) 
+print("AmountÂ ofÂ newÂ loaves=%.2f"%fresh1) 
+print("AmountÂ ofÂ oldÂ loaves=%.2f"%old1) 
+print("TotalÂ Amount=%.2f"%totalamount)
