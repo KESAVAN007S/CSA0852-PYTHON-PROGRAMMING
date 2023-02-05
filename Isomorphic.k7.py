@@ -1,17 +1,22 @@
+max_char=256
 def isomorphic(str1, str2):
-    if len(str1) != len(str2):
+    m=len(str1)
+    n=len(str2)
+    if m!=n:
         return False
-    else:
-        map1, map2 = {}, {}
-        for i in range(len(str1)):
-            ch1, ch2 = str1[i], str2[i]
-            if ch1 not in map1:
-                map1[ch1] = ch2
-            if ch2 not in map2:
-                map2[ch2] = ch1
-            if map1[ch1] != ch2 or map2[ch2] != ch1:
+    mark=[False]*max_char
+    map=[-1]*max_char
+    for i in range(n):
+        if map[ord(str1[i])]==-1:
+            if mark[ord(str2[i])]==True:
                 return False
+            mark[ord(str2[i])]=True
+            map[ord(str1[i])]=str2[i]
+        elif map[ord(str1[i])]!= str2[i]:
+            return False
     return True
-str1 = input("Enter string 1:")
-str2 = input("Enter string 2:")
-print(isomorphic(str1, str2))
+
+#main
+a=str(input("Enter string 1: "))
+b=str(input("Enter string 2: "))
+print(isomorphic(a,b))
